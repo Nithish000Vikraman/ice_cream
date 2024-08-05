@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilly Cones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Chi</span>lly <span>Con</span>es</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#flavors">Flavors</a></li>
+                    <li><a href="#contact">Order Now</a></li>
+                    <li><a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home-section" style="background-image: url('ice.jpg');">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <h2 style="color: bisque;">Welcome to <span>Chi</span>lly <span>Con</span>es !!!</h2>
+                
+            </div>
+        </section>
+    
+        <section id="flavors" class="flavors-section">
+            <div class="container">
+                <h2>Our Flavours</h2>
+                <div class="flavors-grid">
+                    <div class="flavor" onclick="showDescription('vanilla')">
+                        <img src="vanilla.jpg" alt="Vanilla Ice Cream">
+                        <h3>Vanilla</h3>
+                    </div>
+                    <div class="flavor" onclick="showDescription('chocolate')">
+                        <img src="chocolate.jpeg" alt="Chocolate Ice Cream">
+                        <h3>Chocolate</h3>
+                    </div>
+                    <div class="flavor" onclick="showDescription('strawberry')">
+                        <img src="straw.jpg" alt="Strawberry Ice Cream">
+                        <h3>Strawberry</h3>
+                    </div>
+                </div>
+                <div class="flavors-grid">
+                    <div class="flavor" onclick="showDescription('butterscotch')">
+                        <img src="butter.jpeg" alt="butterscotch Ice Cream">
+                        <h3>Butterscotch</h3>
+                    </div>
+                    <div class="flavor" onclick="showDescription('pista')">
+                        <img src="pista.jpg" alt="Pista Ice Cream">
+                        <h3>Pista</h3>
+                    </div>
+                    <div class="flavor" onclick="showDescription('black current')">
+                        <img src="black.jpg" alt="Black current Ice Cream">
+                        <h3>Black Current</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Place An Order</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Flavour:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="message">Address:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <span>Chi</span>lly <span>Con</span>es</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
